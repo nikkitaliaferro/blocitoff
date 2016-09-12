@@ -1,0 +1,25 @@
+/* Color palette */
+
+:root {
+  --active-dew: #738d98;
+  --base-dew: #a2b6be;
+  --high-dew: #e59797;
+  --mid-dew: #e9e697;
+  --bluey-grey: #abbfc7;
+  --p-dew: #6c7e85;
+  --input-dew: rgba(255, 255, 255, 0.45);
+  --low-dew: #bfd6d6;
+}
+
+
+body {
+ background-color: var(--base-dew);    
+ }
+
+.logo {
+/*  width: 80px;
+  height: 25px;*/
+  object-fit: contain;
+  margin-top: 40px;
+  margin-left: 250px;
+}

@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="dewApp">
+
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Blocitoff</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dew</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arapey">
+    <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
 </head>
+
 <body>
-
-
+    <img class="logo" src="/assets/images/logo@2x.png">
+    <!-- Angular View -->
+    <ui-view></ui-view>
     <script src="/scripts/app.js"></script>
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="/scripts/app.js"></script>
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-
     <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
+    // Initialize Firebase
+    var config = {
         apiKey: "AIzaSyDa-YS4QJX2MJwGj-y60s7ehN4uhN6LHTY",
         authDomain: "deww-e9566.firebaseapp.com",
         databaseURL: "https://deww-e9566.firebaseio.com",
         storageBucket: "",
-      };
-      firebase.initializeApp(config);
+    };
+    firebase.initializeApp(config);
     </script>
-    
 </body>
+
 </html>

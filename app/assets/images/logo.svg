@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="83px" height="31px" viewBox="0 0 83 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>5C754442-D69F-411B-A6D5-1315B9964D9B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.28 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-2" cx="12.5" cy="12.5" r="12.5"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" id="radialGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#719896" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="37.2323715%" cy="25.0641741%" fx="37.2323715%" fy="25.0641741%" r="65.6633739%" id="radialGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#719896" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Default-View---Active-Tasks---Blank" transform="translate(-247.000000, -39.000000)">
+            <g id="Logo" transform="translate(250.000000, 40.000000)">
+                <text id="dew" font-family="AkkuratPro-Regular, Akkurat Pro" font-size="25" font-weight="normal" letter-spacing="-1.0625" fill="#FFFFFF">
+                    <tspan x="35" y="20">dew</tspan>
+                </text>
+                <g id="dew" filter="url(#filter-1)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-2"></use>
+                    <g id="teal-dew" filter="url(#filter-4)" mask="url(#mask-3)">
+                        <g transform="translate(-7.500000, 3.000000)">
+                            <path d="M0,36.1813333 C0,46.4213333 8.95295903,55.6521739 20,55.6521739 C31.047041,55.6521739 40,46.4213333 40,36.1813333 C40,22.1124638 20,0 20,0 C20,0 0,22.9583768 0,36.1813333 L0,36.1813333 Z" id="Shape" fill="url(#radialGradient-5)"></path>
+                            <path d="M0,34.4090083 C0,42.4768871 7.04807413,49.7496706 15.7446809,49.7496706 C24.4412876,49.7496706 31.4893617,42.4768871 31.4893617,34.4090083 C31.4893617,23.3244444 15.7446809,5.90250329 15.7446809,5.90250329 C15.7446809,5.90250329 0,23.9909214 0,34.4090083 L0,34.4090083 Z" id="Shape-Copy" fill="url(#radialGradient-6)" style="mix-blend-mode: color-burn;"></path>
+                            <path d="M8.5106383,34.4090083 C8.5106383,42.4768871 15.5587124,49.7496706 24.2553191,49.7496706 C32.9519259,49.7496706 40,42.4768871 40,34.4090083 C40,23.3244444 24.2553191,5.90250329 24.2553191,5.90250329 C24.2553191,5.90250329 8.5106383,23.9909214 8.5106383,34.4090083 L8.5106383,34.4090083 Z" id="Shape-Copy-2" fill="url(#radialGradient-6)" style="mix-blend-mode: color-burn;"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
