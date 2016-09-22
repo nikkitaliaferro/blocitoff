@@ -1,6 +1,6 @@
-var app = angular.module('dewApp', []);
+var app = angular.module('dewApp', ['firebase']);
 
-app.controller('MainCtrl', function($scope) {
+app.controller('TodoCtrl', function($scope) {
   $scope.priorityOption = [
     {value: 1, text: "Low"},
     {value: 2, text: "Medium"},

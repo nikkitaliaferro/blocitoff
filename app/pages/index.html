@@ -9,21 +9,32 @@
     <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
 </head>
 
-<body ng-controller="MainCtrl">
+<body ng-controller="TodoCtrl">
     <header class="page__navigation">
-        <img class="logo" role="logo" src="/assets/images/logo@2x.png">
+        <img class="logo" role="logo" ng-src="/assets/images/logo@2x.png">
     </header>
     <main role="main">
         <form>
             <h1>What do you need to dew?</h1>
             <div>
-                <input type="text">
+                <input type="text" id="task">
             </div>
             <h2>Please set your task priority.</h2>
-            <li ng-repeat="option in priorityOption">
-                <input type="radio" value=" {{ option.value }} " ng-model="$parent.selected" name="priority"> {{ option.text }}
-            </li>
-              
+            <ul>
+                <li ng-repeat="option in priorityOption">
+                    <input type="radio" value=" {{ option.value }} " ng-model="$parent.selected" name="priority"> {{ option.text }}
+                </li>
+            </ul>
+            <div class="buttons">
+                <div id="clear">
+                    <img ng-src="/assets/images/Clear.png">
+                    <br/><span>Clear</span>
+                </div>
+                <div type="submit" id="accept" >
+                    <img ng-src="/assets/images/Accept.png">
+                    <br/><span>Accept</span>
+                </div>
+            </div>
         </form>
     </main>
     <!-- Angular View -->

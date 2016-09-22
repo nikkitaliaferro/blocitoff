@@ -1,29 +1,25 @@
 
 @import 'https://fonts.googleapis.com/css?family=Arapey:400,400i';
 
+
 /* Color palette */
 
 :root {
-  --active-dew: #738d98;
-  --base-dew: #a2b6be;
+  --a-dew: #738d98;
+  --b-dew: #a2b6be;
   --high-dew: #e59797;
   --mid-dew: #e9e697;
   --low-dew: #bfd6d6;
   --p-dew: #6c7e85;
   --input-dew: rgba(255, 255, 255, 0.45);
-
 }
 
-
 body {
- background-color: var(--base-dew);
- font-family: 'dew-regular';    
+ background-color: var(--b-dew);
+ font-weight: 400;
  }
 
 .logo {
-/*  width: 80px;
-  height: 25px;*/
-  object-fit: contain;
   margin-top: 40px;
   margin-left: 250px;
 }
@@ -31,3 +27,15 @@ body {
 h1,h2 {
   font-family: Arapey, serif;
 }
+
+div#clear img, div#accept img {
+  width: 28px;
+  height: 28px;
+}
+
+
+li, .buttons > div {
+  display: inline-block;
+}
+
+
