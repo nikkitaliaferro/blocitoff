@@ -1,41 +1,122 @@
-
 @import 'https://fonts.googleapis.com/css?family=Arapey:400,400i';
-
 
 /* Color palette */
 
 :root {
-  --a-dew: #738d98;
-  --b-dew: #a2b6be;
-  --high-dew: #e59797;
-  --mid-dew: #e9e697;
-  --low-dew: #bfd6d6;
-  --p-dew: #6c7e85;
-  --input-dew: rgba(255, 255, 255, 0.45);
+    --a-dew: #738d98;
+    --b-dew: #a2b6be;
+    --high-dew: #e59797;
+    --mid-dew: #e9e697;
+    --low-dew: #bfd6d6;
+    --p-dew: #6c7e85;
+    --input-dew: rgba(255, 255, 255, 0.45);
 }
 
 body {
- background-color: var(--b-dew);
- font-weight: 400;
- }
+    background-color: var(--b-dew);
+    font-weight: 400;
+    font-family: Akkurat Pro;
+}
+
+main {
+    width: 507px;
+    margin: auto;
+}
 
 .logo {
-  margin-top: 40px;
-  margin-left: 250px;
+    width: 80px;
+    margin-top: 40px;
+    margin-left: 250px;
 }
 
-h1,h2 {
-  font-family: Arapey, serif;
+h1,
+h2,
+h3 {
+    font-family: 'Arapey', serif;
+    color: #FFF;
+    font-weight: 400;
+    letter-spacing: -0.16;
 }
 
-div#clear img, div#accept img {
-  width: 28px;
-  height: 28px;
+h1 {
+    font-size: 32px;
+    letter-spacing: -0.16px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 0px;
+    letter-spacing: -0.13px;
+}
+
+div#clear img,
+div#accept img {
+    width: 28px;
+    height: 28px;
+}
+
+ul {
+    width: 507px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+li {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+}
+
+li:nth-child(1) {
+    margin: 0 169px 0 28px;
+}
+
+li:nth-child(2) {
+    margin: 0 165px 0 0;
+}
+
+.text {
+    width: 500px;
+    height: 26px;
+    margin-bottom: 40px;
+    color: #C6D2D7;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .08px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.option-level {
+    margin-top: 16px;
+    margin-bottom: 38px;
 }
 
 
-li, .buttons > div {
-  display: inline-block;
+/*form icons*/
+
+.buttons {
+    width: 184px;
+    margin: auto;
+    display: inline;
+    color: #fff;
+    font-size: 16px;
 }
 
+.clear-button:before {
+    content: url('/assets/images/Clear.svg');
+    color: #fff;
+    width: 28px;
+    height: 28px;
+}
 
+.submit-button:before {
+    content: url('/assets/images/Accept.svg');
+    color: #fff;
+    width: 28px;
+    height: 28px;
+}

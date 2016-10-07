@@ -1,0 +1,21 @@
+<form ng-submit="$ctrl.createTask()">
+    <h1>What do you need to dew?</h1>
+    <input type="text" ng-model="$ctrl.taskText" name="text" class="text">
+    <h2>Please set your task priority.</h2>
+    <ul>
+        <li ng-repeat="option in $ctrl.priorityOption">
+            <input type="radio" value="{{option.value}}" ng-model="$ctrl.taskPriority" name="priority">
+            <div class="option-level"> {{ option.text }} </div>
+        </li>
+    </ul>
+    <div class="buttons">
+        <div id="clear">
+            <span class="clear-button"></span>
+            <span>Clear</span>
+        </div>
+        <div>
+            <span class="submit-button"></span>
+            <input type="submit" name="submitButton" value="Create Task" />
+        </div>
+    </div>
+</form>
