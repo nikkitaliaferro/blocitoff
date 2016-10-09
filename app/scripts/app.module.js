@@ -6,5 +6,3 @@
     'firebase'
   ]);
 })();
-
-var app = angular.module('app');
