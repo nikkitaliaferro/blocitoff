@@ -2,20 +2,49 @@
     <h1>What do you need to dew?</h1>
     <input type="text" ng-model="$ctrl.taskText" name="text" class="text">
     <h2>Please set your task priority.</h2>
-    <ul>
-        <li ng-repeat="option in $ctrl.priorityOption">
+    <ul class="priority__ul">
+        <li ng-repeat="option in $ctrl.priorityOption" class="priority__li">
             <input type="radio" value="{{option.value}}" ng-model="$ctrl.taskPriority" name="priority">
             <div class="option-level"> {{ option.text }} </div>
         </li>
     </ul>
     <div class="buttons">
-        <div id="clear">
+        <fieldset>
             <span class="clear-button"></span>
             <span>Clear</span>
-        </div>
-        <div>
-            <span class="submit-button"></span>
-            <input type="submit" name="submitButton" value="Create Task" />
-        </div>
+            <fieldset>
+                <fieldset>
+                    <span class="submit-button"></span>
+                    <input type="submit" name="submitButton" value="Create Task" />
+                </fieldset>
     </div>
 </form>
+
+<section class="list">
+    <!-- Task Head -->
+    <ul class="tasks__head">
+        <li class="tasks__status" id="archive_link">
+            Archived
+        </li>
+        <li class="tasks__status" id="active_link">
+            Active
+        </li>
+    </ul>
+    <!-- Task Body -->
+    <div class="task__body">
+        <div class="task__sub">
+            <ul>
+                <li>
+                    Current Tasks
+                </li>
+            </ul>
+        </div>
+        <ul class="task__list">
+            <li ng-if="$ctrl.taskList.length" ng-repeat="tasks in $ctrl.taskList" class="task__item"><span class="label__active">ACTIVE</span> <span>{{ tasks.taskPriority }}</span> <span class="task__item__text"> {{ tasks.text }}</span> </li>
+            <li ng-if="!$ctrl.taskList.length">
+                You have no tasks at this moment.
+            </li>
+        </ul>
+
+    </div>
+</section>
