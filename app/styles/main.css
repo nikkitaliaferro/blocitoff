@@ -58,6 +58,27 @@ div#accept img {
     height: 28px;
 }
 
+.task__priority-icon {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 30em;
+  background: black;
+}
+
+/*Tasklist priority colors*/
+.task__priority-icon-1 {
+ background: var(--low-dew);
+}
+
+.task__priority-icon-2 {
+  background: var(--mid-dew);
+}
+
+.task__priority-icon-3 {
+  background: var(--high-dew);
+}
+
 .priority__ul {
     width: 507px;
     margin: 0px auto;
@@ -104,9 +125,17 @@ div#accept img {
 
 .buttons {
     width: 184px;
-    margin: 0 auto;
     display: inline-block;
 
+}
+
+.buttons, .clear__task, .clear-button:before, .submit-button {
+  margin: auto;
+}
+
+.clear__task {
+  width: 39px;
+  height: 45px;
 }
 
 .clear-button:before {
@@ -114,6 +143,7 @@ div#accept img {
     width: 28px;
     height: 28px;
 }
+
 
 .submit-button:before {
     content: url('/assets/images/Accept.svg');

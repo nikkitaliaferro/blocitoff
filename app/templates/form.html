@@ -9,14 +9,14 @@
         </li>
     </ul>
     <div class="buttons">
-        <fieldset>
-            <span class="clear-button"></span>
+        <fieldset class="clear__task">
+            <span class="clear-button"></span><br/>
             <span>Clear</span>
-            <fieldset>
-                <fieldset>
-                    <span class="submit-button"></span>
-                    <input type="submit" name="submitButton" value="Create Task" />
-                </fieldset>
+        </fieldset>
+        <fieldset class="new__task">
+            <span class="submit-button"></span><br/>
+            <input type="submit" name="submitButton" value="Create Task" />
+        </fieldset>
     </div>
 </form>
 
@@ -40,7 +40,13 @@
             </ul>
         </div>
         <ul class="task__list">
-            <li ng-if="$ctrl.taskList.length" ng-repeat="tasks in $ctrl.taskList" class="task__item"><span class="label__active">ACTIVE</span> <span>{{ tasks.taskPriority }}</span> <span class="task__item__text"> {{ tasks.text }}</span> </li>
+            <li
+              ng-if="$ctrl.taskList.length"
+              ng-repeat="tasks in $ctrl.taskList"
+              class="task__item">
+                <span class="label__active">ACTIVE</span>
+                <span class="task__priority-icon task__priority-icon-{{tasks.taskPriority}}"></span>
+                <span class="task__item__text"> {{ tasks.text }}</span> </li>
             <li ng-if="!$ctrl.taskList.length">
                 You have no tasks at this moment.
             </li>
