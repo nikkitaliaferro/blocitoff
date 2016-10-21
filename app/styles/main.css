@@ -3,7 +3,7 @@
 /* Color palette */
 
 :root {
-    --bg-dew: #a2b6be;
+    --bg: #a2b6be;
     --high-dew: #e59797;
     --mid-dew: #e9e697;
     --low-dew: #c2e2cd;
@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: var(--bg-dew);
+    background-color: var(--bg);
     font-weight: 400;
     font-family: Akkurat Pro;
 }
@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 30px;
     margin-top: 0px;
     letter-spacing: -0.13px;
 }
@@ -77,6 +77,14 @@ div#accept img {
 
 .task__priority-icon-3 {
   background: var(--high-dew);
+}
+
+.option__line {
+  position: relative;
+  top: 10px;
+  z-index: -1;
+  width: 430px;
+  border-bottom: 1px solid #fff;
 }
 
 .priority__ul {
@@ -125,17 +133,17 @@ div#accept img {
 
 .buttons {
     width: 184px;
-    display: inline-block;
-
+    margin: auto;
 }
 
-.buttons, .clear__task, .clear-button:before, .submit-button {
+.buttons, .clear__task, .clear-button:before, .submit-button, .option__line {
   margin: auto;
 }
 
 .clear__task {
   width: 39px;
   height: 45px;
+  margin-right: 94px;
 }
 
 .clear-button:before {
@@ -175,8 +183,19 @@ input[type="submit"] {
 }
 
 .tasks__head {
-  padding: 0;
+  padding: 16px 0;
   margin: auto;
+  width: 504px;
+  background-color: var(--active);
+  color: #fff;
+}
+
+.tasks__head > div {
+  width: 504px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.08px;
+  color: #abbfc7;
 
 }
 
@@ -207,7 +226,6 @@ input[type="submit"] {
 
 .task__sub {
   width: 504px;
-  margin-top: 15px;
   background-color: #f9fafb;
   color: var(--active);
   font-size: 11px;
@@ -221,20 +239,23 @@ input[type="submit"] {
 }
 
 .task__sub > ul > li {
-  margin-right: 86px;
+  margin-right: 16px;
   list-style: none;
+  display: inline;
 }
 
 .task__list {
-  margin-top: 14px;
-  padding: 15px 16px 0 0;
+  margin: 0 0 100px 0 !important;
+  padding: 0 16px 0 0;
 }
 
 .task__list > li {
   color: var(--task);
   width: 504px;
   margin: 0;
-  padding-bottom: 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--bg);
+
   list-style-type: none;
 }
 

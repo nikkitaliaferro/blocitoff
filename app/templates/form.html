@@ -2,6 +2,7 @@
     <h1>What do you need to dew?</h1>
     <input type="text" ng-model="$ctrl.taskText" name="text" class="text">
     <h2>Please set your task priority.</h2>
+    <div class="option__line"></div>
     <ul class="priority__ul">
         <li ng-repeat="option in $ctrl.priorityOption" class="priority__li">
             <input type="radio" value="{{option.value}}" ng-model="$ctrl.taskPriority" name="priority">
@@ -15,27 +16,27 @@
         </fieldset>
         <fieldset class="new__task">
             <span class="submit-button"></span><br/>
-            <input type="submit" name="submitButton" value="Create Task" />
+            <input type="submit" name="submitButton" value="Accept" />
         </fieldset>
     </div>
 </form>
 
 <section class="list">
     <!-- Task Head -->
-    <ul class="tasks__head">
-        <li class="tasks__status" id="archive_link">
-            Archived
-        </li>
-        <li class="tasks__status" id="active_link">
-            Active
-        </li>
-    </ul>
+    <div class="tasks__head">
+      <div>
+        Tasks
+      </div>
+    </div>
     <!-- Task Body -->
     <div class="task__body">
         <div class="task__sub">
             <ul>
                 <li>
                     Current Tasks
+                </li>
+                <li>
+                  Completed Tasks
                 </li>
             </ul>
         </div>
