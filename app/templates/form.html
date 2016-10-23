@@ -2,19 +2,19 @@
     <h1>What do you need to dew?</h1>
     <input type="text" ng-model="$ctrl.taskText" name="text" class="text">
     <h2>Please set your task priority.</h2>
-    <div class="option__line"></div>
+    <div class="option__line margin--auto"></div>
     <ul class="priority__ul">
         <li ng-repeat="option in $ctrl.priorityOption" class="priority__li">
             <input type="radio" value="{{option.value}}" ng-model="$ctrl.taskPriority" name="priority">
             <div class="option-level"> {{ option.text }} </div>
         </li>
     </ul>
-    <div class="buttons">
-        <fieldset class="clear__task">
+    <div class="buttons text--center margin--auto">
+        <fieldset class="clear__task ">
             <span class="clear-button"></span><br/>
             <span>Clear</span>
         </fieldset>
-        <fieldset class="new__task">
+        <fieldset class="new__task text--center">
             <span class="submit-button"></span><br/>
             <input type="submit" name="submitButton" value="Accept" />
         </fieldset>

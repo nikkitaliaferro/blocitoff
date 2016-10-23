@@ -52,6 +52,14 @@ h2 {
     letter-spacing: -0.13px;
 }
 
+.margin--auto {
+  margin: auto !important;
+}
+
+.text--center {
+    text-align: center;
+}
+
 div#clear img,
 div#accept img {
     width: 28px;
@@ -81,7 +89,7 @@ div#accept img {
 
 .option__line {
   position: relative;
-  top: 10px;
+  top: 9px;
   z-index: -1;
   width: 430px;
   border-bottom: 1px solid #fff;
@@ -104,9 +112,34 @@ div#accept img {
 .priority__li:nth-child(1) {
     margin: 0 169px 0 28px;
 }
+/*style option level background*/
+li:nth-child(1) > input {
+  background-color: var(--low-dew);
+}
+li:nth-child(2) > input {
+  background-color: var(--mid-dew);
+}
+li:nth-child(3) > input {
+  background-color: var(--high-dew);
+}
 
 .priority__li:nth-child(2) {
     margin: 0 165px 0 0;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  background-color: #fff;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+}
+
+input[type="radio"]:checked {
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background-color: #fff;
 }
 
 .text {
@@ -134,10 +167,6 @@ div#accept img {
 .buttons {
     width: 184px;
     margin: auto;
-}
-
-.buttons, .clear__task, .clear-button:before, .submit-button, .option__line {
-  margin: auto;
 }
 
 .clear__task {
