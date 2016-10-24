@@ -206,7 +206,7 @@ input[type="submit"] {
 /*list*/
 
 .list {
-  width: 507px;
+  width: 504px;
   margin-top: 38px;
   padding: 0;
 }
@@ -262,6 +262,8 @@ input[type="submit"] {
 .task__complete-icon.is-completed {
   background: url('/assets/images/task-checked.svg') no-repeat center;
 }
+
+
 
 .task__complete-icon:hover,
 .task__remove:hover {
@@ -333,4 +335,8 @@ input[type="submit"] {
   letter-spacing: -0.07px;
   margin-left: 16px;
   max-width: 317px !important;
+}
+
+.task__item__text.is-completed {
+  text-decoration: line-through;
 }
