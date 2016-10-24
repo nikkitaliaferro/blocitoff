@@ -32,17 +32,17 @@
     <div class="task__body">
         <div class="task__sub">
             <ul class="margin--auto">
-                <li>
+                <li class="current__task">
                     Current Tasks
                 </li>
-                <li>
+                <li class="Completed__task">
                     Completed Tasks
                 </li>
             </ul>
         </div>
         <ul class="task__list">
             <li ng-if="$ctrl.taskList.length" ng-repeat="tasks in $ctrl.taskList" class="task__item">
-                <span class="label__active">ACTIVE</span>
+                <span class="label__active">{{ tasks.category }}</span>
                 <span class="task__priority-icon task__priority-icon-{{tasks.taskPriority}}"></span>
                 <div
                 class="task__item__text"
