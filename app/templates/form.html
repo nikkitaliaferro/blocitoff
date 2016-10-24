@@ -3,51 +3,60 @@
     <input type="text" ng-model="$ctrl.taskText" name="text" class="text">
     <h2>Please set your task priority.</h2>
     <div class="option__line margin--auto"></div>
-    <ul class="priority__ul">
+    <ul class="priority__ul margin--auto">
         <li ng-repeat="option in $ctrl.priorityOption" class="priority__li">
             <input type="radio" value="{{option.value}}" ng-model="$ctrl.taskPriority" name="priority">
             <div class="option-level"> {{ option.text }} </div>
         </li>
     </ul>
     <div class="buttons text--center margin--auto">
-        <fieldset class="clear__task ">
+        <fieldset class="clear__task margin--auto">
             <span class="clear-button"></span><br/>
             <span>Clear</span>
         </fieldset>
-        <fieldset class="new__task text--center">
+        <fieldset class="new__task text--center margin--auto">
             <span class="submit-button"></span><br/>
             <input type="submit" name="submitButton" value="Accept" />
         </fieldset>
     </div>
 </form>
 
-<section class="list">
+<section class="list margin--auto">
     <!-- Task Head -->
     <div class="tasks__head">
-      <div>
-        Tasks
-      </div>
+        <div>
+            Tasks
+        </div>
     </div>
     <!-- Task Body -->
     <div class="task__body">
         <div class="task__sub">
-            <ul>
+            <ul class="margin--auto">
                 <li>
                     Current Tasks
                 </li>
                 <li>
-                  Completed Tasks
+                    Completed Tasks
                 </li>
             </ul>
         </div>
         <ul class="task__list">
-            <li
-              ng-if="$ctrl.taskList.length"
-              ng-repeat="tasks in $ctrl.taskList"
-              class="task__item">
+            <li ng-if="$ctrl.taskList.length" ng-repeat="tasks in $ctrl.taskList" class="task__item">
                 <span class="label__active">ACTIVE</span>
                 <span class="task__priority-icon task__priority-icon-{{tasks.taskPriority}}"></span>
-                <span class="task__item__text"> {{ tasks.text }}</span> </li>
+                <div
+                class="task__item__text"
+                ng-class="{'is-completed': tasks.isTaskComplete === true}"> {{ tasks.text }}</div>
+                <div class="task__mark">
+                  <i
+                  class="task__complete-icon"
+                  ng-class="{'is-completed': tasks.isTaskComplete === true}"
+                  ng-click="$ctrl.isTaskComplete(tasks)"></i>
+                  <i
+                  class="task__remove"
+                  ng-click="$ctrl.removeTask(tasks)"></i>
+                </div>
+            </li>
             <li ng-if="!$ctrl.taskList.length">
                 You have no tasks at this moment.
             </li>
