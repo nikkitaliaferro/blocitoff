@@ -339,4 +339,5 @@ input[type="submit"] {
 
 .task__item__text.is-completed {
   text-decoration: line-through;
+  color: var(--listhead);
 }
