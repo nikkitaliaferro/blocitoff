@@ -65,10 +65,6 @@
             vm.removeTask = function(tasks) {
                 taskList.$remove(tasks);
             };
-            //Set selection and filter
-            vm.filters = { };
-
-
         }
     }
 
