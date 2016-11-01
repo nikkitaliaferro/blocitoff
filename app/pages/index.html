@@ -15,6 +15,7 @@
     <header class="page__navigation">
         <img class="logo" role="logo" ng-src="/assets/images/logo@2x.png">
     </header>
+    <div ui-view="form"></div>
     <main role="main" ui-view="main">
         <!-- Load Content -->
     </main>
@@ -43,6 +44,8 @@
 
     <!-- Directives -->
     <script src="../scripts/directives/dTodoForm.directive.js"></script>
+    <script src="../scripts/directives/dTaskListActive.directive.js"></script>
+    <script src="../scripts/directives/dTaskListCompleted.directive.js"></script>
 
 </body>
 
