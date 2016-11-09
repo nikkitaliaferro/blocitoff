@@ -16,7 +16,7 @@
           'form': {
             template: '<d-todo-form></d-todo-form>'
           },
-          'main': {
+          'list': {
             template: '<ui-view></ui-view>'
           }
         }

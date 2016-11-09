@@ -15,9 +15,9 @@
     <header class="page__navigation">
         <img class="logo" role="logo" ng-src="/assets/images/logo@2x.png">
     </header>
-    <div ui-view="form"></div>
-    <main role="main" ui-view="main">
-        <!-- Load Content -->
+    <main role="main">
+      <div ui-view="form"></div>
+      <div ui-view="list"></div>
     </main>
 
     <!-- Vendor Scripts -->
@@ -46,6 +46,7 @@
     <script src="../scripts/directives/dTodoForm.directive.js"></script>
     <script src="../scripts/directives/dTaskListActive.directive.js"></script>
     <script src="../scripts/directives/dTaskListCompleted.directive.js"></script>
+    <script src="../scripts/directives/dTaskListNav.directive.js"></script>
 
 </body>
 
