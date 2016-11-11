@@ -1,0 +1,13 @@
+<li
+  ng-if="$ctrl.taskList.length"
+  ng-repeat="tasks in $ctrl.taskList | filter : {{listFilter}} === true"
+  class="task__item">
+  <span class="label__active">{{ tasks.category }}</span>
+  <span class="task__priority-icon task__priority-icon-{{tasks.taskPriority}}"></span>
+  <div class="task__item__text" ng-class="{'is-completed': tasks.isTaskComplete === true}"> {{ tasks.text }}</div>
+  <div class="task__mark">
+      <i class="task__complete-icon" ng-class="{'is-completed': tasks.isTaskComplete === true}" ng-click="$ctrl.isTaskComplete(tasks)"></i>
+      <i class="task__remove" ng-click="$ctrl.removeTask(tasks)"></i>
+  </div>
+</li>
+<li ng-if="!$ctrl.taskList.length">You have no tasks at this moment.</li>
