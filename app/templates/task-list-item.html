@@ -1,6 +1,6 @@
 <li
   ng-if="$ctrl.taskList.length"
-  ng-repeat="tasks in $ctrl.taskList | filter : {{listFilter}} === true"
+  ng-repeat="tasks in $ctrl.taskList | filter : !isTaskComplete === $ctrl.activeTask"
   class="task__item">
   <span class="label__active">{{ tasks.category }}</span>
   <span class="task__priority-icon task__priority-icon-{{tasks.taskPriority}}"></span>
