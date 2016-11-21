@@ -2,55 +2,21 @@
     <h1>What do you need to dew?</h1>
     <input type="text" ng-model="$ctrl.taskText" name="text" class="text">
     <h2>Please set your task priority.</h2>
-    <ul class="priority__ul">
+    <div class="option__line margin--auto"></div>
+    <ul class="priority__ul margin--auto">
         <li ng-repeat="option in $ctrl.priorityOption" class="priority__li">
             <input type="radio" value="{{option.value}}" ng-model="$ctrl.taskPriority" name="priority">
             <div class="option-level"> {{ option.text }} </div>
         </li>
     </ul>
-    <div class="buttons">
-        <fieldset class="clear__task">
+    <div class="buttons text--center margin--auto">
+        <fieldset class="clear__task margin--auto">
             <span class="clear-button"></span><br/>
             <span>Clear</span>
         </fieldset>
-        <fieldset class="new__task">
+        <fieldset class="new__task text--center margin--auto">
             <span class="submit-button"></span><br/>
-            <input type="submit" name="submitButton" value="Create Task" />
+            <input type="submit" name="submitButton" value="Accept" />
         </fieldset>
     </div>
 </form>
-
-<section class="list">
-    <!-- Task Head -->
-    <ul class="tasks__head">
-        <li class="tasks__status" id="archive_link">
-            Archived
-        </li>
-        <li class="tasks__status" id="active_link">
-            Active
-        </li>
-    </ul>
-    <!-- Task Body -->
-    <div class="task__body">
-        <div class="task__sub">
-            <ul>
-                <li>
-                    Current Tasks
-                </li>
-            </ul>
-        </div>
-        <ul class="task__list">
-            <li
-              ng-if="$ctrl.taskList.length"
-              ng-repeat="tasks in $ctrl.taskList"
-              class="task__item">
-                <span class="label__active">ACTIVE</span>
-                <span class="task__priority-icon task__priority-icon-{{tasks.taskPriority}}"></span>
-                <span class="task__item__text"> {{ tasks.text }}</span> </li>
-            <li ng-if="!$ctrl.taskList.length">
-                You have no tasks at this moment.
-            </li>
-        </ul>
-
-    </div>
-</section>

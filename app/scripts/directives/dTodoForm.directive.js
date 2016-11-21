@@ -37,14 +37,35 @@
 
             // Create Task
             vm.createTask = function() {
-              taskList.$add({
-                taskPriority: vm.taskPriority,
-                text: vm.taskText,
-                isTaskComplete: false
-              })
-            }
+                taskList.$add({
+                        taskPriority: vm.taskPriority,
+                        text: vm.taskText,
+                        isTaskComplete: false,
+                        category: 'active'
+                    })
+                    .then(
+                        vm.taskText = '',
+                        vm.isCreateTaskVisable = false
+                    );
+            };
 
-        };
+            // Is Completed Task
+            vm.isTaskComplete = function(tasks) {
+                if (tasks.isTaskComplete === false) {
+                    tasks.isTaskComplete = true;
+                    tasks.category = 'completed';
+                } else {
+                    tasks.isTaskComplete = false;
+                    tasks.category = 'active';
+                }
+                taskList.$save(tasks);
+            };
+
+            // Remove task
+            vm.removeTask = function(tasks) {
+                taskList.$remove(tasks);
+            };
+        }
     }
 
 })();
