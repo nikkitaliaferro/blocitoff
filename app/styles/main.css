@@ -339,3 +339,12 @@ input[type="submit"] {
   text-decoration: line-through;
   color: var(--listhead);
 }
+
+ a {
+  color: var(--active);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
