@@ -336,6 +336,11 @@ input[type="submit"] {
   max-width: 285px !important;
 }
 
+.empty__list {
+  width: 100%;
+  text-align: center;
+}
+
 .task__item__text.is-completed {
   text-decoration: line-through;
   color: var(--listhead);
