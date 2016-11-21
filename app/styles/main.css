@@ -192,6 +192,7 @@ fieldset {
   border: 0 none transparent !important;
   color: var(--white);
   font-size: 16px;
+  cursor: pointer;
 }
 
 input[type="submit"] {
