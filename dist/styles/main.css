@@ -180,13 +180,13 @@ input[type="radio"]:checked {
 }
 
 .clear-button:before {
-    content: url('assets/images/Clear.svg');
+    content: url('../assets/images/Clear.svg');
     width: 28px;
     height: 28px;
 }
 
 .submit-button:before {
-    content: url('assets/images/Accept.svg');
+    content: url('../assets/images/Accept.svg');
     width: 28px;
     height: 28px;
 }
@@ -245,7 +245,7 @@ input[type="submit"] {
 }
 
 .task__remove {
-    background: url('assets/images/x-remove.svg') no-repeat center;
+    background: url('../assets/images/x-remove.svg') no-repeat center;
     background-size: 100%;
     height: 10px;
     width: 10px;
@@ -254,7 +254,7 @@ input[type="submit"] {
 }
 
 .task__complete-icon {
-    background: url('assets/images/task-unchecked.svg') no-repeat center;
+    background: url('../assets/images/task-unchecked.svg') no-repeat center;
     background-size: 100%;
     display: inline-flex;
     height: 28px;
