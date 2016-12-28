@@ -1,3 +1,13 @@
+/* @import must be at top of file, otherwise CSS will not work */
+
+@import url("//hello.myfonts.net/count/32bdfb");
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/type/Larsseit.eot');
+    src: url('../assets/type/Larsseit.eot?#iefix') format('embedded-opentype'), url('../assets/type/Larsseit.woff2') format('woff2'), url('../assets/type/Larsseit.woff') format('woff'), url('../assets/type/Larsseit.ttf') format('truetype');
+}
+
+
 /* Color palette */
 
 :root {
@@ -16,7 +26,7 @@
 body {
     background-color: var(--bg);
     font-weight: 400;
-    font-family: 'Akkurat Pro';
+    font-family: 'Larsseit';
 }
 
 main {
