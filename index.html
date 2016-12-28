@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dew | dew and done.</title>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+</head>
+
+<body>
+    <header class="page__navigation">
+        <img class="logo" role="logo" ng-src="assets/images/logo@2x.png">
+    </header>
+    <main role="main">
+        <div ui-view="form"></div>
+        <div ui-view="list"></div>
+    </main>
+
+    <!-- Vendor Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script>
+        var config = {
+            apiKey: "AIzaSyDa-YS4QJX2MJwGj-y60s7ehN4uhN6LHTY",
+            authDomain: "deww-e9566.firebaseapp.com",
+            databaseURL: "https://deww-e9566.firebaseio.com",
+            storageBucket: "deww-e9566.appspot.com",
+            messagingSenderId: "588661843618"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <!-- Global -->
+    <script src="/scripts/app.module.js"></script>
+    <script src="/scripts/appRoute.config.js"></script>
+
+    <!-- Directives -->
+    <script src="/scripts/directives/dTodoForm.directive.js"></script>
+    <script src="/scripts/directives/dTaskListActive.directive.js"></script>
+    <script src="/scripts/directives/dTaskListCompleted.directive.js"></script>
+    <script src="/scripts/directives/dTaskListNav.directive.js"></script>
+    <script src="/scripts/directives/dTaskListItem.directive.js"></script>
+
+</body>
+
+</html>
