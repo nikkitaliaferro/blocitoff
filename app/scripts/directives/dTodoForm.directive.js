@@ -8,7 +8,7 @@
             restrict: 'E',
             scope: {},
             bindToController: true,
-            templateUrl: 'templates/form.html',
+            templateUrl: '/templates/form.html',
             controllerAs: '$ctrl',
             controller: ['$firebaseArray', TodoFormCtrl]
         };
