@@ -1,5 +1,5 @@
-
 /* Color palette */
+
 :root {
     --bg: #a2b6be;
     --high-dew: #e59797;
@@ -26,12 +26,11 @@ main {
 
 .logo {
     width: 80px;
-    margin: 40px auto 0 250px;
+    left: 20px;
+    margin: 40px auto 0 20px;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     color: var(--white);
     font-weight: 500;
     letter-spacing: -0.2;
@@ -49,46 +48,47 @@ h2 {
 }
 
 .margin--auto {
-  margin: auto !important;
+    margin: auto !important;
 }
 
 .text--center {
     text-align: center;
 }
 
-div#clear img,
-div#accept img {
+div#clear img, div#accept img {
     width: 28px;
     height: 28px;
 }
 
 .task__priority-icon {
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  border-radius: 30em;
-  background: black;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 30em;
+    background: black;
 }
 
+
 /*Tasklist priority colors*/
+
 .task__priority-icon-1 {
- background: var(--low-dew);
+    background: var(--low-dew);
 }
 
 .task__priority-icon-2 {
-  background: var(--mid-dew);
+    background: var(--mid-dew);
 }
 
 .task__priority-icon-3 {
-  background: var(--high-dew);
+    background: var(--high-dew);
 }
 
 .option__line {
-  position: relative;
-  top: 9px;
-  z-index: -1;
-  width: 430px;
-  border-bottom: 1px solid var(--white);
+    position: relative;
+    top: 9px;
+    z-index: -1;
+    width: 430px;
+    border-bottom: 1px solid var(--white);
 }
 
 .priority__ul {
@@ -107,15 +107,20 @@ div#accept img {
 .priority__li:nth-child(1) {
     margin: 0 169px 0 28px;
 }
+
+
 /*style option level background*/
-li:nth-child(1) > input {
-  background-color: var(--low-dew);
+
+li:nth-child(1)>input {
+    background-color: var(--low-dew);
 }
-li:nth-child(2) > input {
-  background-color: var(--mid-dew);
+
+li:nth-child(2)>input {
+    background-color: var(--mid-dew);
 }
-li:nth-child(3) > input {
-  background-color: var(--high-dew);
+
+li:nth-child(3)>input {
+    background-color: var(--high-dew);
 }
 
 .priority__li:nth-child(2) {
@@ -123,22 +128,22 @@ li:nth-child(3) > input {
 }
 
 input:focus {
-  outline: none;
+    outline: none;
 }
 
 input[type="radio"] {
-  -webkit-appearance: none;
-  background-color: var(--white);
-  height: 12px;
-  width: 12px;
-  border-radius: 12px;
+    -webkit-appearance: none;
+    background-color: var(--white);
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
 }
 
 input[type="radio"]:checked {
-  height: 14px;
-  width: 14px;
-  border-radius: 14px;
-  background-color: var(--white);
+    height: 14px;
+    width: 14px;
+    border-radius: 14px;
+    background-color: var(--white);
 }
 
 .text {
@@ -169,9 +174,9 @@ input[type="radio"]:checked {
 }
 
 .clear__task {
-  width: 39px;
-  height: 45px;
-  margin-right: 94px !important;
+    width: 39px;
+    height: 45px;
+    margin-right: 94px !important;
 }
 
 .clear-button:before {
@@ -180,7 +185,6 @@ input[type="radio"]:checked {
     height: 28px;
 }
 
-
 .submit-button:before {
     content: url('/assets/images/Accept.svg');
     width: 28px;
@@ -188,169 +192,181 @@ input[type="radio"]:checked {
 }
 
 fieldset {
-  display: inline-block;
-  border: 0 none transparent !important;
-  color: var(--white);
-  font-size: 16px;
-  cursor: pointer;
+    display: inline-block;
+    border: 0 none transparent !important;
+    color: var(--white);
+    font-size: 16px;
+    cursor: pointer;
 }
 
 input[type="submit"] {
-  background-color: transparent;
-  border: 0 none transparent;
-  color: var(--white);
+    background-color: transparent;
+    border: 0 none transparent;
+    color: var(--white);
 }
+
 
 /*list*/
 
 .list {
-  width: 504px;
-  margin-top: 38px;
-  padding: 0;
+    width: 504px;
+    margin-top: 38px;
+    padding: 0;
 }
 
 .tasks__head {
-  padding: 16px 0;
-  width: 504px;
-  background-color: var(--active);
-  color: var(--white);
-  margin: 40px auto 0 auto;
+    padding: 16px 0;
+    width: 504px;
+    background-color: var(--active);
+    color: var(--white);
+    margin: 40px auto 0 auto;
 }
 
-.tasks__head > div {
-  width: 504px;
-  text-align: center;
-  font-size: 16px;
-  letter-spacing: -.08px;
-  color: #abbfc7;
+.tasks__head>div {
+    width: 504px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: -.08px;
+    color: #abbfc7;
 }
 
 .tasks__status {
-  display: inline;
-  list-style-type: none;
-  text-align: center;
-  color: var(--listhead);
-  font-size: 16px;
-  width: 50%;
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+    color: var(--listhead);
+    font-size: 16px;
+    width: 50%;
 }
 
 .task__mark {
-  display: inline-flex;
-  float: right;
+    display: inline-flex;
+    float: right;
 }
 
 .task__remove {
-  background: url('/assets/images/x-remove.svg') no-repeat center;
-  background-size: 100%;
-  height: 10px;
-  width: 10px;
-  margin-top: 7px;
-  margin-right: 16px;
+    background: url('/assets/images/x-remove.svg') no-repeat center;
+    background-size: 100%;
+    height: 10px;
+    width: 10px;
+    margin-top: 7px;
+    margin-right: 16px;
 }
 
 .task__complete-icon {
-  background: url('/assets/images/task-unchecked.svg') no-repeat center;
-  background-size: 100%;
-  display: inline-flex;
-  height: 28px;
-  width: 28px;
-  margin-right: 16px;
+    background: url('/assets/images/task-unchecked.svg') no-repeat center;
+    background-size: 100%;
+    display: inline-flex;
+    height: 28px;
+    width: 28px;
+    margin-right: 16px;
 }
 
 .task__complete-icon.is-completed {
-  background: url('/assets/images/task-checked.svg') no-repeat center;
+    background: url('/assets/images/task-checked.svg') no-repeat center;
 }
 
-
-
-.task__complete-icon:hover,
-.task__remove:hover {
-  cursor: pointer;
+.task__complete-icon:hover, .task__remove:hover {
+    cursor: pointer;
 }
 
 #archive_link {
-  background-color: var(--archive);
-  padding: 17px 94.3px;
+    background-color: var(--archive);
+    padding: 17px 94.3px;
 }
 
 #active_link {
-  background-color: var(--active);
-  padding: 17px 102.155px;
+    background-color: var(--active);
+    padding: 17px 102.155px;
 }
 
 .task__body {
-  width: 504px;
-  background-color: var(--white);
+    width: 504px;
+    background-color: var(--white);
 }
 
 .task__sub {
-  width: 504px;
-  background-color: #f9fafb;
-  color: var(--active);
-  font-size: 11px;
-  text-align: right;
-  letter-spacing: .5px;
-  padding: 15px 0;
+    width: 504px;
+    background-color: #f9fafb;
+    color: var(--active);
+    font-size: 11px;
+    text-align: right;
+    letter-spacing: .5px;
+    padding: 15px 0;
 }
 
-.task__sub > ul > li {
-  margin-right: 16px;
-  list-style: none;
-  display: inline;
+.task__sub>ul>li {
+    margin-right: 16px;
+    list-style: none;
+    display: inline;
 }
 
 .task__list {
-  margin: 0 0 100px 0 !important;
-  padding: 0 16px 0 0;
+    margin: 0 0 100px 0 !important;
+    padding: 0 16px 0 0;
 }
 
 .task__list li {
-  color: var(--task);
-  width: 504px;
-  padding: 30px 0;
-  border-bottom: 1px solid var(--bg);
-  list-style-type: none;
+    color: var(--task);
+    width: 504px;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--bg);
+    list-style-type: none;
 }
 
 .task__item {
-  width: 500px;
+    width: 500px;
 }
 
 .label__active {
-  color: var(--listhead);
-  font-size: 11px;
-  letter-spacing: .5px;
-  margin: 0 16px;
-  text-transform: uppercase;
+    color: var(--listhead);
+    font-size: 11px;
+    letter-spacing: .5px;
+    margin: 0 16px;
+    text-transform: uppercase;
 }
 
-
 .task__item__text {
-  display: inline-flex;
-  height: 100%;
-  vertical-align: center;
-  color: var(--task);
-  font-size: 14px;
-  letter-spacing: -0.07px;
-  margin-left: 16px;
-  max-width: 285px !important;
+    display: inline-flex;
+    height: 100%;
+    vertical-align: center;
+    color: var(--task);
+    font-size: 14px;
+    letter-spacing: -0.07px;
+    margin-left: 16px;
+    max-width: 285px !important;
 }
 
 .empty__list {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 .task__item__text.is-completed {
-  text-decoration: line-through;
-  color: var(--listhead);
+    text-decoration: line-through;
+    color: var(--listhead);
 }
 
- a {
-  color: var(--active);
-  text-decoration: none;
+a {
+    color: var(--active);
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+text-align: center;
+
+}
+.task__item__text.is-completed {
+    text-decoration: line-through;
+    color: var(--listhead);
+}
+a {
+    color: var(--active);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
