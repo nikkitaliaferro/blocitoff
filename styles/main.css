@@ -180,13 +180,13 @@ input[type="radio"]:checked {
 }
 
 .clear-button:before {
-    content: url('/assets/images/Clear.svg');
+    content: url('assets/images/Clear.svg');
     width: 28px;
     height: 28px;
 }
 
 .submit-button:before {
-    content: url('/assets/images/Accept.svg');
+    content: url('assets/images/Accept.svg');
     width: 28px;
     height: 28px;
 }
