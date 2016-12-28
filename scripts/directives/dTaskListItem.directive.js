@@ -10,7 +10,7 @@
                 activeTask: '<'
             },
             bindToController: true,
-            templateUrl: 'templates/task-list-item.html',
+            templateUrl: '/templates/task-list-item.html',
             controllerAs: '$ctrl',
             controller: ['$firebaseArray', '$scope', TaskListItemCtrl]
         };
