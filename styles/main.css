@@ -46,15 +46,12 @@ h1, h2, h3 {
     letter-spacing: -0.2;
 }
 
-h1 {
-    font-size: 32px;
-    letter-spacing: -0.16px;
-}
-
 h2 {
-    font-size: 30px;
+    font-size: .95em;
     margin-top: 0px;
-    letter-spacing: -0.13px;
+    letter-spacing: 1.60px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .margin--auto {
